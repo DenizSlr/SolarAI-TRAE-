@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Zorg dat alle asset-urls relatief zijn voor shared hosting / subfolders
+  base: "./",
   server: {
     host: "::",
     port: 8080,
